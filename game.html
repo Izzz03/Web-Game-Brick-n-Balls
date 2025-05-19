@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Brick n Balls</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mt-4 p-5 bg-primary text-white rounded custom-jumbotron">
+        <h1>Brick n Balls</h1>
+            <p>Permainan klasik dengan sentuhan modern!</p>
+
+        <nav>
+            <ul>
+                <li><a href="#" class="navLink active" data-section="about">Tentang Game</a></li>
+                <li><a href="#" class="navLink" data-section="howToPlay">Cara Bermain</a></li>
+                <li><a href="#" class="navLink" data-section="credits">Kredit</a></li>
+                <li><a href="#" class="navLink" data-section="gameSection">Main Sekarang</a></li>
+            </ul>
+        </nav>
+
+        <section id="about" class="section">
+            <h2>Tentang Game</h2>
+            <p>Brick n Balls adalah permainan sederhana yang terinspirasi dari klasik arkanoid, namun dengan sentuhan modern. Tujuan permainan ini adalah menghancurkan semua balok dengan bola-bola yang memantul.</p>
+            <p>Fitur utama dari Brick n Balls:</p>
+            <ul>
+                <li>Gameplay sederhana namun menantang</li>
+                <li>Balok dengan berbagai kekuatan yang membutuhkan beberapa tumbukan</li>
+                <li>Bola yang bertambah banyak saat permainan berlangsung</li>
+                <li>Sistem skor dan skor tertinggi</li>
+            </ul>
+            <div class="game-info">
+                <p>Ayo buktikan ketangkasanmu dan pecahkan semua balok!</p>
+            </div>
+        </section>
+
+        <section id="howToPlay" class="section">
+            <h2>Cara Bermain</h2>
+            <ol>
+                <li>Klik tombol "Mulai Game" untuk memulai permainan.</li>
+                <li>Gerakkan kursor atau jari Anda (di perangkat sentuh) untuk menggerakkan paddle di bagian bawah.</li>
+                <li>Klik atau sentuh layar untuk melepaskan bola.</li>
+                <li>Bola akan memantul dan menghancurkan balok yang disentuhnya.</li>
+                <li>Beberapa balok membutuhkan lebih dari satu tumbukan untuk hancur.</li>
+                <li>Kumpulkan sebanyak mungkin poin dengan menghancurkan balok.</li>
+                <li>Game berakhir jika semua balok hancur atau kamu kehilangan semua nyawa.</li>
+            </ol>
+            <p>Tips:</p>
+            <ul>
+                <li>Fokus untuk menghancurkan balok dengan kekuatan rendah terlebih dahulu.</li>
+                <li>Balok dengan angka lebih besar memberikan poin lebih banyak.</li>
+                <li>Pertahankan strategi dan sabar menunggu momen yang tepat untuk melepaskan bola.</li>
+            </ul>
+        </section>
+
+        <section id="credits" class="section">
+            <h2>Kredit</h2>
+            <p>Game ini dibuat sebagai proyek demonstrasi JavaScript dan HTML5 Canvas.</p>
+            <p>Tim Pengembang:</p>
+            <ul>
+                <li>Desain Game: Tim Brick n Balls</li>
+                <li>Pemrograman: Developer JavaScript</li>
+                <li>Desain Grafis: Designer HTML/CSS</li>
+            </ul>
+            <p>Sumber Daya:</p>
+            <ul>
+                <li>HTML5 Canvas</li>
+                <li>Vanilla JavaScript</li>
+                <li>CSS3 untuk styling</li>
+            </ul>
+            <p>Terima kasih telah memainkan Brick n Balls!</p>
+        </section>
+
+        <section id="gameSection" class="section">
+            <h2>Main Game</h2>
+            <div id="highScore">Skor Tertinggi: 0</div>
+            <div id="scoreBoard">Skor: 0</div>
+            <div id="lives">Nyawa: 3</div>
+            <canvas id="gameCanvas" width="480" height="640"></canvas>
+            <div class="gameControls">
+                <button id="startButton">Mulai Game</button>
+                <button id="resetButton">Reset Game</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Brick n Balls - Semua Hak Cipta Dilindungi</p>
+        </footer>
+        <script src="game.js"></script>
+    </div>
+
+</body>
+
+</html>
+
